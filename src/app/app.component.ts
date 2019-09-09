@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'taskbox';
+  task = {
+    id: '1',
+    title: 'Test Task',
+    state: 'TASK_INBOX',
+  };
+
+  onPinTask(taskId: any) {
+    console.log(taskId);
+  }
+
+  onArchiveTask(taskId: any) {
+    console.log(taskId);
+  }
 }
